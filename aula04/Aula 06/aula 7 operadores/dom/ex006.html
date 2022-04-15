@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(139, 178, 230);
+            color: white;
+            font: normal 18pt Arial;
+
+        }
+    </style>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo usar <strong>Dom</strong> em JavaScript.</p>
+    <div id= "msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('P')[0] // Seleciona um paragrafo
+        corpo.style.background = 'black' // muda a cor do fundo do site
+        p1.style.color = 'blue' // muda a cor do primeiro paragrafo p1
+        window.document.write(p1.innerText)
+        var d = window.document.getElementById('msg') // faz a mudança direto pelo id na div  
+        d.innerText = 'Estou aguardando'
+        d.style.background ='green'
+        var d = window.document.querySelector('div#msg') // seleciona faz a mudança pela div d modo simplificado
+        d.style.color = 'blue'
+    </script>
+</head>
+<body>
+  <h1>Iniciando estudos com Dom</h1>  
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        document.write(`Seu nome tem ${nome.length} letras <br/>`)
+        document.write(`Olá, <strong>${nome}<strong>! Seu nome tem ${nome.length} letras <br/>`)
+        document.write(`Seu nome em maiuscula é ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome em minusculas é ${nome.toLocaleLowerCase()}`)
+
+        /* > var n1 = 1545.5 teste no node de como colocar virgula trocando o ponto
+undefined
+> n1
+1545.5
+> n1.tofixed(2)
+Uncaught TypeError: n1.tofixed is not a function
+> n1.toFixed(2)
+'1545.50'
+> n1.toFixed(2).replace('.', ',') este faz a troca
+'1545,50'
+ n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) este para colocar a moeda local para mudar para outras so alterar o br
+'R$ 1.545,50'
+>
+>
+        */
+
+
+        
+    </script>
+</body>
+</html>
